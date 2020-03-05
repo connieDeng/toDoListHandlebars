@@ -1,0 +1,20 @@
+<link href='login.css' type='text/css' rel='stylesheet'>
+
+
+<div class='box'>
+     <img src="https://img.icons8.com/color/48/000000/user.png">
+     <h1>Login Page</h1>
+     {{#if message}}
+          <div class="alert {{messageClass}}" role="alert">
+               {{message}}
+          </div><br/>
+     {{/if}}
+
+     <form method='post' action='/login'>
+          <div>Username</div></br>
+          <input type="text" name="inputUsername" placeholder="Enter username"/>
+          </br></br>
+          <button> Login </button>
+     </form>
+          <button onclick="location.href='/signup'">Register</button>
+</div>

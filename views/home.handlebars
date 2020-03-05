@@ -1,0 +1,41 @@
+<link href='home.css' type='text/css' rel='stylesheet'>
+<div class='box'>
+     <h1>Home Page</h1>
+     <img src="https://img.icons8.com/cute-clipart/64/000000/copybook.png">
+     <div>welcome {{username}} </div>
+     <ul>
+          {{#each content}} 
+               {{#if deleted}}
+                    <div></div>
+               {{else}}
+                    {{#if completed}}
+                         <li><strike>{{content}}</strike>
+                              <form method='post' action='/deleteTask'> 
+                                   <button class='DC' name='taskID' value='{{id}}' type="submit"> delete </button> 
+                              </form>
+                              <form method='post' action='/complete'> 
+                                   <button class='DC' name='taskID' value='{{id}}' type="submit"> complete </button> 
+                              </form>
+                         </li>
+                         {{else}}
+                         <li>{{content}} 
+                              <form method='post' action='/deleteTask'> 
+                                   <button class='DC' name='taskID' value='{{id}}' type="submit"> delete </button> 
+                              </form>
+                              <form method='post' action='/complete'> 
+                                   <button class='DC' name='taskID' value='{{id}}' type="submit"> complete </button> 
+                              </form>
+                         </li>
+                    {{/if}}
+               {{/if}}
+          {{/each}}
+     </ul>
+     <form method='post' action='/addNewTask'>
+          <input type="text" name="inputNewTask" placeholder="Enter New Task"/>
+          <button> add new Task </button>
+     </form>
+     </br></br>
+     <form action='/logout'>
+          <button type="submit"> logout </button> 
+     </form>
+</div>

@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    background-attachment: fixed;
+    background-position: left top;
+    background-image: url("plant.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.box{
+    display: inline-block;
+    background-color: #ADD8E6;
+    width: 40em;
+    margin-top: 15em;
+    padding-top: 1%;
+    padding-bottom: 6%;
+    border-radius: 25px;
+}
+
+form{
+    display: inline;
+}
+
+ul {
+    text-align: center;
+    list-style: inside;
+}
+

@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    background-attachment: fixed;
+    background-position: left top;
+    background-image: url("plant.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.box{
+    display: inline-block;
+    background-color: #ADD8E6;
+    width: 20em;
+    margin-top: 15em;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    border-radius: 25px;
+}
+
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
+form{
+    display: inline;
+}
